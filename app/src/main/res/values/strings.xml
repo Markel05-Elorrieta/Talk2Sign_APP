@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Talk2Sign</string>
+    <string name="app_description">Zeinu itzultzaile moderno eta automatikoa</string>
+    <string name="name">Izena</string>
+    <string name="name_placeholder">Idatzi zure izena</string>
+    <string name="surname">Abizenak</string>
+    <string name="surname_placeholder">Idatzi zure abizenak</string>
+    <string name="email">E-posta</string>
+    <string name="email_placeholder">Idatzi zure e-posta</string>
+    <string name="password">Pasahitza</string>
+    <string name="password_placeholder">Idatzi zure pasahitza</string>
+    <string name="birth_date">Jaiotze-data</string>
+    <string name="birth_date_placeholder">Idatzi zure jaiotze-data</string>
+    <string name="repeat_password">Pasahitza errepikatu</string>
+    <string name="repeat_password_placeholder">Errepikatu zure pasahitza</string>
+    <string name="register">Erregistratu</string>
+    <string name="register_now">Erregistratu oraintxe bertan</string>
+    <string name="login_prompt">Saioa hasi zure kontuan!</string>
+    <string name="login">Login egin</string>
+    <string name="forgot_password">Pasahitza ahaztu duzu? Egin klik hemen.</string>
+    <string name="remember_password">Gogoratu pasahitza</string>
+    <string name="new_here">Berria zara? Erregistratu oraintxe bertan!</string>
+    <string name="continue_without_registering">Jarraitu erregistratu gabe</string>
+    <string name="recover_password">Pasahitza berreskuratu</string>
+    <string name="send">Bidali</string>
+    <string name="profile">Nire profila</string>
+    <string name="change_password">Pasahitza aldatu</string>
+    <string name="save_changes">Gorde aldaketak</string>
+    <string name="app_language">Aplikazioaren hizkuntza</string>
+    <string name="translator_language">Itzultzailearen hizkuntza</string>
+    <string name="app_appearance">Aplikazioaren itxura</string>
+    <string name="dark_mode">Iluna</string>
+    <string name="change_settings_here">Hemen aplikazioaren xehetasunak alda dezakezu.</string>
+</resources>

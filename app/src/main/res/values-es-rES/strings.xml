@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Talk2Sign</string>
+    <string name="app_description">Traductor moderno y automatizado de señas</string>
+    <string name="name">Nombre</string>
+    <string name="name_placeholder">Introduce tu nombre</string>
+    <string name="surname">Apellido</string>
+    <string name="surname_placeholder">Introduce tu apellido</string>
+    <string name="email">Correo electrónico</string>
+    <string name="email_placeholder">Introduce tu correo electrónico</string>
+    <string name="password">Contraseña</string>
+    <string name="password_placeholder">Introduce tu contraseña</string>
+    <string name="birth_date">Fecha de nacimiento</string>
+    <string name="birth_date_placeholder">Introduce tu fecha de nacimiento</string>
+    <string name="repeat_password">Repite la contraseña</string>
+    <string name="repeat_password_placeholder">Repite tu contraseña</string>
+    <string name="register">Registrar</string>
+    <string name="register_now">Regístrate ahora</string>
+    <string name="login_prompt">¡Inicia sesión en tu cuenta!</string>
+    <string name="login">Iniciar sesión</string>
+    <string name="forgot_password">¿Olvidaste tu contraseña? Haz clic aquí.</string>
+    <string name="remember_password">Recordar contraseña</string>
+    <string name="new_here">¿Eres nuevo? ¡Regístrate ahora!</string>
+    <string name="continue_without_registering">Continuar sin registrarse</string>
+    <string name="recover_password">Recuperar contraseña</string>
+    <string name="send">Enviar</string>
+    <string name="profile">Mi Perfil</string>
+    <string name="change_password">Cambiar Contraseña</string>
+    <string name="save_changes">Guardar Cambios</string>
+    <string name="app_language">Idioma de la aplicación</string>
+    <string name="translator_language">Idioma del traductor</string>
+    <string name="app_appearance">Apariencia de la aplicación</string>
+    <string name="dark_mode">Oscuro</string>
+    <string name="change_settings_here">Puedes cambiar los detalles de la aplicación aquí.</string>
+</resources>
