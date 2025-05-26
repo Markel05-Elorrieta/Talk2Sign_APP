@@ -107,7 +107,7 @@
                 android:clickable="true"
                 android:focusable="true"
                 android:orientation="horizontal">
-                <TextView
+                <EditText
                     android:id="@+id/password_label"
                     android:textColor="#919191"
                     android:hint="@string/password"
@@ -116,6 +116,7 @@
                     android:layout_height="wrap_content"
                     android:layout_width="match_parent"
                     android:layout_weight="1"
+                    android:inputType="textPassword"
                     />
 
                 <ImageView

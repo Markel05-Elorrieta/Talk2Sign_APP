@@ -45,51 +45,45 @@
 
         <!-- Form Fields -->
         <EditText
+            android:id="@+id/Name_ET"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="24dp"
             android:background="#2C2F33"
-            android:textColorHint="#AAAAAA"
+            android:padding="12dp"
             android:textColor="#FFFFFF"
-            android:padding="12dp" />
+            android:textColorHint="#AAAAAA" />
 
         <EditText
+            android:id="@+id/Surname_ET"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="12dp"
             android:background="#2C2F33"
-            android:textColorHint="#AAAAAA"
+            android:padding="12dp"
             android:textColor="#FFFFFF"
-            android:padding="12dp" />
+            android:textColorHint="#AAAAAA" />
 
         <EditText
+            android:id="@+id/Email_ET"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="12dp"
+            android:background="#2C2F33"
             android:inputType="textEmailAddress"
-            android:background="#2C2F33"
-            android:textColorHint="#AAAAAA"
+            android:padding="12dp"
             android:textColor="#FFFFFF"
-            android:padding="12dp" />
+            android:textColorHint="#AAAAAA" />
 
         <EditText
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="12dp"
-            android:inputType="textPassword"
-            android:background="#2C2F33"
-            android:textColorHint="#AAAAAA"
-            android:textColor="#FFFFFF"
-            android:padding="12dp" />
-
-        <EditText
+            android:id="@+id/DateBirth_ET"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="12dp"
             android:background="#2C2F33"
-            android:textColorHint="#AAAAAA"
+            android:padding="12dp"
             android:textColor="#FFFFFF"
-            android:padding="12dp" />
+            android:textColorHint="#AAAAAA" />
 
         <!-- Change Password Button -->
         <Button

@@ -13,12 +13,23 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class ProfileC extends AppCompatActivity {
+    public static User testUser = new User("Test User", "TEST", "test@test.eus", "1234", "2003-01-01");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_profile_view);
+
+        EditText nameInput = findViewById(R.id.Name_ET);
+        EditText surnameInput = findViewById(R.id.Surname_ET);
+        EditText birthdateInput = findViewById(R.id.DateBirth_ET);
+        EditText emailInput = findViewById(R.id.Email_ET);
+
+        nameInput.setText(testUser.getName());
+        surnameInput.setText(testUser.getSurname());
+        birthdateInput.setText(testUser.getBirthDate());
+        emailInput.setText(testUser.getEmail());
 
         Button passwdChangeButton = findViewById(R.id.changePasswordButton);
         passwdChangeButton.setOnClickListener(v -> {
@@ -36,6 +47,25 @@ public class ProfileC extends AppCompatActivity {
 
         Button saveChangesButton = findViewById(R.id.saveChangesButton);
         saveChangesButton.setOnClickListener(v -> {
+            String name = nameInput.getText().toString();
+            String surname = surnameInput.getText().toString();
+            String birthdate = birthdateInput.getText().toString();
+            String email = emailInput.getText().toString();
+            if (name.isEmpty() || surname.isEmpty() || birthdate.isEmpty() || email.isEmpty()) {
+                new AlertDialog.Builder(ProfileC.this)
+                        .setTitle("Errorea")
+                        .setMessage("Datu guztiak bete behar dira.")
+                        .setPositiveButton("Ados", null)
+                        .show();
+                return;
+            }
+
+            // Update the test user with the new data
+            testUser.setName(name);
+            testUser.setSurname(surname);
+            testUser.setBirthDate(birthdate);
+            testUser.setEmail(email);
+
             finish();
         });
     }

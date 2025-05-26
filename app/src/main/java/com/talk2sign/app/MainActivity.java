@@ -16,19 +16,43 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static User testUser = new User("Test User", "TEST", "test@test.eus", "1234", "2003-01-01");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_login_view);
 
-
         LinearLayout loginButton = (LinearLayout) findViewById(R.id.login_button);
         LinearLayout registerButton = (LinearLayout) findViewById(R.id.register_button);
         TextView forgotPassword = (TextView) findViewById(R.id.forgot_password_link);
         LinearLayout jarraituErregGabe = (LinearLayout) findViewById(R.id.continue_without_registering_section);
+        EditText emailInput = (EditText) findViewById(R.id.email_edit_text);
+        EditText passwordInput = (EditText) findViewById(R.id.password_label);
 
         loginButton.setOnClickListener(v -> {
+            String email = emailInput.getText().toString();
+            String password = passwordInput.getText().toString();
+
+            if (email.isEmpty() || password.isEmpty()) {
+                new AlertDialog.Builder(MainActivity.this)
+                        .setTitle("Errorea")
+                        .setMessage("Email-a eta pasahitza bete behar dira.")
+                        .setPositiveButton("Ados", null)
+                        .show();
+                return;
+            }
+
+            if (!email.equals(testUser.getEmail()) || !password.equals(testUser.getPassword())) {
+                new AlertDialog.Builder(MainActivity.this)
+                        .setTitle("Errorea")
+                        .setMessage("Email-a edo pasahitza okerra da.")
+                        .setPositiveButton("Ados", null)
+                        .show();
+                return;
+            }
+
             Intent intent = new Intent(MainActivity.this, MainC.class);
             startActivity(intent);
         });
